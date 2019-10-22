@@ -1,6 +1,8 @@
 <h1>Create an Artist</h1>
 
 <%= form_for @artist  do |f| %>
+
+  <%= f.hidden_field :song_id %>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <br />
